@@ -3,7 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+body{
+    background-image: linear-gradient(90deg,rgb(212, 173, 173),rgb(68, 83, 179));
+}
 #header{
     position: fixed;
     top: 0;
@@ -24,15 +26,19 @@ background-color:  #154284;
 }
 #nav .subnav{
 display: none;
+
 position: absolute;
 background-color: #fff;
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 width: 108px;
 }
-#nav >li:hover> a,
-#nav .subnav li:hover a{
+#nav >li:hover> a
+{
 color: #000;
 background-color: #ccc;
+}
+#nav .subnav li:hover a{
+    background-color: aqua;
 }
 
 #nav .subnav a{
@@ -98,6 +104,7 @@ background-color: #ccc;
 }
 #header .search-btn:hover{
     background-color: #ccc;
+    color: black;
     cursor: pointer;
 }
 #header .search-icon{
@@ -116,8 +123,10 @@ background-color: #ccc;
  #nav {
      display: inline-block;
  }
- #content{
-     background-image: linear-gradient(90deg,rgb(212, 173, 173),rgb(71, 78, 124));
+ .conten-section  img:hover{
+     transition: all 0.5s ease;
+    width: 110px;
+    cursor: pointer;
  }
  #content .conten-section{
      text-align: center;
@@ -231,9 +240,7 @@ background-color: #ccc;
      padding: 25px;
      
  }
- #manaGe{
-    background-image: linear-gradient(90deg,rgb(212, 173, 173),rgb(71, 78, 124));
- }
+ 
  #manaGe-section {
      width: 800px;
      padding: 40px 0;
@@ -246,6 +253,10 @@ background-color: #ccc;
    letter-spacing: 4px;
    font-size: 45px     ;
    
+ }
+ .manaGer-item img:hover{
+     transition: all 0.5s ease;
+     width: 380px;
  }
  .manaGe-heading,
  .section-sub-Manage{
@@ -270,11 +281,12 @@ background-color: #ccc;
   
 }
 .manaGer-item img{
-    width: 45%;
-    text-align: center;
-    display: inline ;
-    padding: 0 50px;
-     margin-left:  80px;
+     width: 45%;
+     text-align: center;
+     display: inline block ; 
+     padding: 0 50px;
+     margin-left:  50px;
+     margin-top: -50px;    
    
 }
 .list-Cup{
@@ -284,16 +296,24 @@ background-color: #ccc;
     line-height: 3;
     font-weight: bolder;
     font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+.list-Cup li:hover{
+    font-size: 20px;
+    transition: all 0.5s ease-in;
+    background: linear-gradient(90deg,#68EACC,rgb(40, 56, 163));
+    border-radius: 5px;
+
+    
 }
 .Legend-section{
      width: 800px;
      padding: 40px 0;
      margin-left: auto;
      margin-right: auto;
+     display: block;
 }
-#legend{
-    background-image: linear-gradient(90deg,rgb(212, 173, 173),rgb(71, 78, 124));
-}
+
  .legend-heading{
      margin-top: 30px;
      font-size: 50px;
@@ -310,6 +330,7 @@ background-color: #ccc;
     font-size: 30px;
     border-bottom: solid #154284 2px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
 }
 
 .legend-list .legend-member img{
@@ -321,7 +342,12 @@ background-color: #ccc;
    cursor: pointer;
    image-rendering: smooth;
 }
-
+.legend-list .legend-member li img:hover {
+  transition: all 0.5s ease;
+   height: 300px;
+   width: 300px;
+   
+}
 .social-list{
     font-size: 24px;
     margin-top: 30px;
@@ -339,7 +365,7 @@ background-color: #ccc;
 #footer {
     text-align: center;
     padding: 64px 16px;
-    background-image: linear-gradient(90deg,rgb(212, 173, 173),rgb(71, 78, 124));
+   
 }
 #footer .logo  a img{ 
   
@@ -354,6 +380,11 @@ background-color: #ccc;
   #footer .club{
     font-size:38px;
     font-weight:bolder ;
+    cursor: pointer;
+  }
+  #footer .logo a:hover img{
+      transition: all 0.5s ease;
+      width: 350px;
   }
   #footer .cup-Club li {
     display:inline-block;
@@ -366,6 +397,7 @@ background-color: #ccc;
     cursor:pointer;
     text-transform:uppercase;
     
+    
     }
     #footer .cup-Club li a{
         list-style: none;
@@ -374,13 +406,23 @@ background-color: #ccc;
        
     }
     #footer .cup-Club li a:hover{
-        color: rgba(0, 0, 0, 0.301);
+        
+        background: linear-gradient(90deg,#68EACC,rgb(40, 56, 163));
+        transition: all 0.5s ease-in-out;
+        font-size: 20px;
+        border-radius: 5px;
+       
+        
     }
     .cup-Club img{
-        border-radius: 15px;
-        border: #000 solid 2px;
-        margin-top: 10px;
         
+        border:black solid 2px;
+        margin-top: 15px;
+        font-size: 20px;
+        margin-bottom: -5px;
+        border-radius: 5px;
+        /* margin-bottom: -7px;
+         */
         
     }
     
