@@ -125,7 +125,8 @@ background-color: #ccc;
  }
  .conten-section  img:hover{
      transition: all 0.5s ease;
-    width: 110px;
+    width: 210px;
+    height: 210px;
     cursor: pointer;
  }
  #content .conten-section{
@@ -154,7 +155,7 @@ background-color: #ccc;
      
  }
  
- #defender{
+ /* #defender{
      font-size: 30px;
      border-bottom: solid #154284 2px;
  }
@@ -239,8 +240,74 @@ background-color: #ccc;
      float: right;
      padding: 25px;
      
- }
+
+ } */
  
+ .Defender ul{
+     display: flex;
+     justify-content: space-around;
+     text-align: center;
+ }
+ .Defender li img,.Forward li img,.MIDDLE li img,.Keeper img{
+     width: 190px;
+     height: 200px;
+     border-radius: 9px;
+     border: solid black 2px;
+ }
+ .nameD,.namdM,.namdF{
+     font-size:20px ;
+     font-weight: bold;
+     margin: 10px auto;
+ }
+ ul{
+     list-style: none;
+ }
+ .GKeep{
+     font-size: 25px;
+     font-weight: bold;
+     margin-top: 20px;
+ }
+ /* .Keeper img{
+     border: solid black 2px;
+     border-radius: 9px;
+     width: 10px;
+     height: 120px;
+ } */
+ .MIDDLE ul{
+     display: flex;
+     justify-content: space-around;
+     text-align: center;
+ }
+ /* .MIDDLE li img{
+    width: 100px;
+    height: 120px;
+    border-radius: 9px;
+    border: solid black 2px;
+     
+ } */
+ .titleMid ,.titleDef,.titleFor{
+    font-size: 30px;
+     font-weight: bold;
+     margin: 20px auto;
+     text-transform: uppercase;
+     border-bottom: solid #154284 2px;
+
+     
+ }
+ .Forward ul{
+     display: flex;
+     justify-content: space-around;
+     text-align: center;
+
+ }
+ /* .Forward li img{
+    width: 100px;
+    height: 120px;
+    border-radius: 9px;
+    border: solid black 2px;
+
+ } */
+
  #manaGe-section {
      width: 800px;
      padding: 40px 0;
