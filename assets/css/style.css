@@ -314,7 +314,8 @@ background-color: #fff;
 
  #manaGe-section {
      width: 1000px;
-     padding: 40px 0;
+     height: auto;
+     padding: 40px auto;
      margin-left: auto;
      margin-right: auto;
      font-family: Arial, Helvetica, sans-serif;
@@ -346,9 +347,10 @@ background-color: #fff;
  }  */
  
 .Test{
-    margin: 48px auto 48px auto;
+    margin: 48px auto;
     padding: 32px 0;
     display: flex;
+    
 }
 .TestFirst{
     background: #ccc;
@@ -374,7 +376,7 @@ background-color: #fff;
 .TestSecond-1{
     flex: 1;
     padding: 4px 16px;
-    background-color: rgb(227, 192, 214);
+    background-color: rgb(233, 185, 215);
     border-radius: 0 15px 0 0;
     
     
@@ -565,7 +567,7 @@ background-color: #fff;
     #end{
         text-align: center;
         font-size: 20px;
-        margin-top:  -40px;
+        margin-top:  -50px;
         font-weight: bolder;
         
     }
@@ -579,3 +581,9 @@ background-color: #fff;
         color: #154284;
       font-weight: bolder;
     }
+   #end .Home a i{
+       color: #000;
+       font-size: 25px;
+       font-weight: bolder;
+    }
+    
